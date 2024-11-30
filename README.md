@@ -26,22 +26,33 @@ cd bloodtest
 
 
 #Create and activate an virtual environment
+```bash
 python -m venv venv
+```
 # On Windows
+```bash
 venv\Scripts\activate
+```
 # On macOS/Linux
+```bash
 source venv/bin/activate
+```
 If you already have the virtual environment kindly delete it and install a new virtual environment because in some cases you might face some installation errors
 
 
 #Installation Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 
 #Set up the database
+```bash
 python manage.py makemigrations
 python manage.py migrate
-
+```
 
 #Run the development server
+```bash
 python manage.py runserver
+```
